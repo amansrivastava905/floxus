@@ -1,0 +1,955 @@
+*{
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
+	// font-family: 'Roboto', sans-serif;
+	font-family: 'Varela Round', sans-serif;
+}
+
+html{
+	scroll-behavior: smooth;
+}
+
+
+
+
+
+
+// navbar
+
+
+nav{
+	padding:20px 150px;
+	position: fixed;
+	width:100%;
+	background-color:rgba(255,255,255,0.99);
+	 z-index:9000;
+    overflow: auto;
+     transition: all 0.15s linear;
+     
+	.navbar{
+		display: flex;
+		justify-content: space-between;
+		.logo{
+             a{
+             	font-size: 28px;
+             	text-decoration: none;
+             	color:darkblue;
+                // padding:10px 20px;
+                font-family: 'Montserrat', sans-serif;
+                text-align: center;
+                img{
+                	width:115px;
+                	display: inline-block;
+                	
+                }
+
+             }
+
+		}
+
+		.nav ul{
+			display: flex;
+			list-style: none;
+			.nav-items{
+				text-decoration: none;
+				color:darkblue;
+				font-weight: 500;
+				padding:0 20px;
+				 line-height: 36px;
+				letter-spacing: 3px;
+				&:hover{
+					color: green;
+				}
+			}
+			#nav-signup{
+				border:1px solid black;
+				color:darkblue;
+				font-weight: bold;
+				padding:8px 16px;
+				border-radius:5px;
+				&:hover{
+					background-color: darkblue;
+					color: white;
+					border-color:black;
+				}
+			}
+			#nav-signin{
+				font-weight: bold;
+			}
+		}
+	}
+
+}
+
+.active{
+     	 box-shadow: 0 0 10px rgba(0,0,0,0.4);   
+     }
+
+
+
+// landing page 
+
+
+
+.landing{
+	display:flex;
+	.landing-data{
+		padding-top:200px;
+		padding-left:150px;
+		h1{
+			letter-spacing: 2px;
+			color:darkblue;
+			// font-family: 'Montserrat', sans-serif;
+			font-family: 'Varela Round', sans-serif;
+            padding-bottom:30px;
+		}
+
+		p{
+			// letter-spacing: 2px;
+		    line-height:18px;
+		    word-spacing: 3px;
+			color:rgba(0,0,0,0.7);
+			padding-bottom:50px;
+			font-weight:lighter;
+		}
+
+		.get-started{
+			a{
+				text-decoration: none;
+				color:white;
+				 // font-family: 'Montserrat', sans-serif;
+				 font-family: 'Varela Round', sans-serif;
+			}
+            border:none;
+            outline:none;
+            background-color:darkblue;
+            padding:10px 45px;
+            border-radius:3px;
+            margin-right: 40px;
+            &:hover{
+            	 cursor:pointer;
+            }
+		}
+
+		.talk-to-us{
+			a{
+				text-decoration: none;
+				color:darkblue;
+				 // font-family: 'Montserrat', sans-serif;
+				 font-family: 'Varela Round', sans-serif;
+			}
+            border:none;
+            outline:none;
+            border:0.5px solid black;
+            background-color:white;
+            padding:10px 52px;
+            border-radius:3px;
+            margin-right: 40px;
+            &:hover{
+            	 cursor:pointer;
+            }
+		}
+
+	}
+
+	.landing-image{
+		img{
+			width:900px;
+		}
+	}
+}
+
+
+// EXPLORE BUTTON
+
+.explore-btn{
+	padding-top:40px;
+	text-align: center;
+	a{
+		text-decoration: none;
+		color:white;
+		background-color:darkblue;
+		padding:10px 50px;
+		font-weight: lighter;
+		 // font-family: 'Montserrat', sans-serif;
+		 font-family: 'Varela Round', sans-serif;
+		border:0.5px solid darkblue;
+	    border-radius:20px;
+	}
+}
+
+
+
+// explore section
+
+.explore-section{
+	padding:70px 150px;
+	.explore-head{
+		display: flex;
+		.head{
+           h1{
+           	// font-family: 'Montserrat', sans-serif;
+           	font-family: 'Varela Round', sans-serif;
+           	color:darkblue;
+           	letter-spacing: 4px;
+           	padding-top: 150px;
+           }
+		}
+		.img{
+			img{
+				width:500px;
+			}
+		}
+	}
+
+	.explore-card{
+		padding:20px 150px;
+		display: flex;
+		align-items:center;
+		justify-content: space-around;
+		background-color:rgba(0,0,0,0.04);
+		border-radius:20px;
+		.card-item{
+			width:250px;
+			height:200px;
+			text-align: center;
+			img{
+				width:150px;
+				height:150px;
+				// padding:20px;
+				border-radius:50%;
+				background-color:white;
+			}
+
+			h1{
+				padding:10px 10px;
+				font-size: 18px;
+				// font-family: 'Comic Neue', cursive;
+				color: darkblue;
+				// letter-spacing: 3px;
+			}
+			p{
+				color:rgba(0,0,0,0.7);
+				letter-spacing: 2px;
+			}
+		}
+	}
+	.explore-more{
+		padding:50px 150px;
+		.explore-box{
+			display: flex;
+			.explore-text{
+               h1{
+               // font-family: 'Comic Neue', cursive;
+               	color:rgba(0,0,0,0.6);
+				// letter-spacing: 3px;
+				font-size: 24px;
+				padding-top:70px;
+               }
+			}
+			.explore-image{
+				transition:transform 0.3s;
+				img{
+					width:550px;
+					padding:50px;	
+				}
+			}
+			&:hover{
+				.explore-image{
+					transform: scale(1.1);
+					transition: all 0.3s;
+
+				}
+			}
+		}
+		.explore-box:last-child{
+			h1{
+				padding-top:180px;
+			}
+		}
+	}
+}
+
+
+// courses
+.course{
+
+	.course-background{
+		padding:0px 150px;
+		width:70%;
+		margin-left:40%;
+	}
+	padding:100px 150px;
+	.heading{
+		padding-bottom:30px;
+	     // font-family: 'Montserrat', sans-serif;
+	     font-family: 'Varela Round', sans-serif;
+	     text-align: center;
+	     font-size:18px;
+	     color: darkblue;
+        letter-spacing: 2px;
+	}
+.courses{
+	
+	display:grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-gap:30px;
+	.course-box{
+		transition: box-shadow 0.3s;
+		border-radius:50px 50px 50px 50px;
+		transition: transform 0.4s;
+		height:400px;
+		width: 300px;
+		border:0.5px solid darkblue;
+		overflow: hidden;
+		text-align: center;
+		img{
+		     width:100%;
+		     height:200px;
+		     border-bottom:1px solid darkblue;
+		     border-radius:50%;
+		}
+		h1{
+		    font-size: 24px;
+		    color:darkblue;
+		    // font-family: 'Montserrat', sans-serif;
+		    font-family: 'Varela Round', sans-serif;
+		    padding:10px 10px;
+		    text-align: center;
+		}
+
+		h2{
+			font-size: 28px;
+			color:red;
+			padding-bottom:30px;
+			font-weight: lighter;
+		}
+		a{
+			text-decoration: none;
+			color:white;
+			background-color:darkblue;
+			padding:10px 20px;
+			border:1px solid darkblue;
+			border-radius:6px;
+			margin:0 20px;
+			&:hover{
+				background-color:rgba(0,0,0,0.05);
+				color:darkblue;
+			}
+		}
+
+		.buy{
+			color:darkblue;
+			background-color:white;
+			border:1px solid darkblue;
+			padding:10px 30px;
+          &:hover{
+          	background-color:darkblue;
+          	color:white;
+          }
+		}
+		 &:hover{
+		 	transform: scale(1.06, 1.1);
+	    	transition: all 0.4s;
+	    	box-shadow:0 0 10px rgba(0,0,0,0.6);
+	    }
+	}
+}
+}
+
+
+
+
+// contact form
+.contact{
+	text-align: center;
+	padding-bottom:100px;
+	// background-color:rgba(98, 98, 197, 0.6);
+	h1{
+		text-align: center;
+		// font-family: 'Montserrat', sans-serif;
+		font-family: 'Varela Round', sans-serif;
+		font-size: 40px;
+		letter-spacing: 3px;
+		padding-top:100px;
+		padding-bottom:20px;
+		color: darkblue;
+	}
+	h2{
+		font-family: 'Varela Round', sans-serif;
+		text-align: center;
+		color:rgba(0,0,0,0.7);
+		letter-spacing: 3px;
+	}
+	.campus{
+		text-align: center;
+		padding-bottom:20px;
+		img{
+			display: inline-block;
+			width:60%;
+		}
+	}
+
+	a{
+		text-decoration: none;
+		display: inline-block;
+		padding:20px 120px;
+		background-color:darkblue;
+		color:white;
+		border-radius:50px;
+		transition: background-color 0.2s;
+		&:hover{
+			color:darkblue;
+			background-color:white;
+			border:1px solid darkblue;
+			transition: all 0.2s;
+		}
+	}
+	
+	
+}
+
+
+// footer
+
+.footer{
+	background-color:rgba(0,0,0,0.05);
+	color:rgba(0,0,0,0.7);
+	display: flex;
+	.footer-info{
+		color: white;
+		flex:1;
+		padding:30px 30px;
+		.footer-logo{
+			display: inline-block;
+			img{
+				width:250px;
+				padding-bottom:20px;
+			}
+			border-bottom:1.5px solid rgba(0,0,0,0.5);
+		}
+		.footer-text{
+            padding:20px 0px;
+            width:500px;
+            text-align: left;
+            color:rgba(0,0,0,0.7);
+		}
+	}
+	.footer-links{
+		flex:1;
+		padding-top:30px;
+		padding-left:30px;
+		ul{
+			color:rgba(0,0,0,0.7);
+			font-weight: bold;
+			list-style: none;
+			border-right:0.5px solid rgba(0,0,0,0.5);
+			border-left:0.5px solid rgba(0,0,0,0.5);
+			// flex:1;
+			padding:20px 70px;
+			li{
+				text-align: center;
+				padding:5px 0;
+				a{
+					text-decoration: none;
+					color:rgba(0,0,0,0.7);
+					letter-spacing: 2px;
+					font-weight: lighter;
+					font-size: 14px;
+					&:hover{
+						color:black;
+						font-weight: bold;
+					}
+				}
+			}
+		}
+	}
+
+	.footer-social-icon{
+		flex:1;
+	    padding-left:30px;
+	    padding-top:50px;
+	.phone{
+		p{
+			text-align: left;
+			font-size: 12px;
+			img{
+				width: 40px;
+				vertical-align: middle;
+				padding-right:10px;
+			}
+		}
+	}
+	.social{
+		padding-top:20px;
+		padding-bottom:20px;
+		img{
+			width:30px;
+			padding-right:5px;
+
+		}
+	}
+}
+	
+}
+.copyright{
+	text-align: center;
+	color:darkblue;
+	font-size: 18px;
+	background-color:rgba(0,0,0,0.05);
+	padding-bottom:30px;
+	padding-top:30px;
+}
+
+
+
+@media screen and (max-width: 1450px)
+{
+	.get-started{
+		margin-bottom: 10px;
+	}
+}
+
+@media screen and (max-width: 1240px)
+{
+	.explore-btn{
+		display: none;
+	}
+	.landing{
+		.landing-image{
+			img{
+				width: 700px;
+			}
+		}
+	}
+
+	.course{
+        
+        .courses{
+        	grid-template-columns:1fr 1fr;
+        	.course-box{
+
+        	}
+
+        }
+	}
+}
+
+
+
+
+@media screen and (max-width:1220px)
+{
+	nav{
+		padding:20px 50px;
+	}
+    .landing{
+		.landing-image{
+			img{
+				width: 700px;
+			}
+		}
+	} 
+	.footer{
+		.footer-links{
+			ul{
+				padding:20px 70px;
+			}
+		}
+	}
+}
+
+
+
+@media screen and (max-width: 1130px){
+	 .landing{
+	 	padding:70px 40px;
+	 	display: block;
+		.landing-image{
+			padding-left:200px;
+			img{
+				width: 500px;
+			}
+		}
+		.landing-data{
+			padding:50px 20px;
+		}
+	} 
+
+	.explore-section{
+          padding:20px 40px;
+
+	}
+}
+
+
+@media screen and (max-width: 1024px)
+{
+	nav{
+		.navbar{
+			.logo{
+
+			}
+			.nav{
+				ul{
+
+				}
+			}
+		}
+	}
+
+	 .landing{
+	 	padding-bottom:0px;
+		.landing-image{
+			display: none;
+		}
+		.landing-data{
+			padding-bottom:0px;
+		}
+	}
+
+	.explore-section{
+		padding:10px 10px;
+		.explore-more{
+			padding:20px 20px;
+			.explore-box{
+
+				.explore-image{
+					img{
+						width:500px;
+					}
+				}
+				.explore-text{
+					h1{
+						font-size: 24px;
+					}
+				}
+
+			}
+			.explore-box:last-child{
+				h1{
+					padding-top:140px;
+				}
+			}
+		}
+	}
+	.footer{
+		display: block;
+		.footer-links{
+			ul{
+				border:none;
+			}
+		}
+	}
+}
+
+
+
+@media screen and (max-width: 940px)
+{
+    .course{
+    	padding:10px 60px;
+    	margin-left: 10px;
+    	.courses{
+
+    	}
+    	.course-background{
+    		padding:0;
+    		margin-left:100px;
+    	}
+    }
+
+    .contact{
+    	form{
+    		padding:10px 50px;
+    	}
+    }
+
+    nav{
+		.navbar{
+			.logo{
+
+			}
+			.nav{
+				ul{
+                      li:first-child{
+                      	// display: none;
+                      }
+				}
+			}
+		}
+	}
+}
+
+
+@media screen and (max-width: 878px)
+{
+	 nav{
+		.navbar{
+			.logo{
+
+			}
+			.nav{
+				ul{
+                      li:first-child{
+                      	   display: none;
+                      }
+				}
+			}
+		}
+	}
+
+	 .course{
+    	margin-left:0px;
+    	padding:20px 40px;
+    	.courses{
+            grid-template-columns:1fr 1fr;
+    	}
+    	.course-background{
+    		margin-left:0px;
+    	}
+    }
+}
+
+@media screen and (max-width: 830px)
+{
+    .explore-section{
+    	padding:10px 0px;
+    	.explore-head{
+    		display:block;
+    		.img{
+    			img{
+    				width:600px;
+    				padding-left:300px;
+    			}
+    		}
+    		.head{
+    			h1{
+    				padding:0;
+    				text-align: center;
+    				padding-bottom:20px;
+    			}
+    		}
+    	}
+
+    	.explore-card{
+    		padding:20px 0px;
+    		border-radius:0px;
+    		.card-item{
+    			width:100px;
+    			height:200px;
+
+    			img{
+    				width:80px;
+    				height: 80px;
+    			}
+    		}
+    	}
+    }
+}
+
+
+@media screen and (max-width: 790px)
+{
+	 nav{
+		.navbar{
+			.logo{
+
+			}
+			.nav{
+				ul{
+					li:not(:last-child){
+						display: none;
+					}
+					li{
+						font-size:10px;
+					}
+				}
+				
+			}
+		}
+	}
+
+    
+
+    .explore-section{
+    	.explore-more{
+    		.explore-box{
+    			display:flex;
+    			flex-direction:column-reverse;
+    			.explore-image{
+                   text-align: center;
+    				img{
+                          width: 300px;
+                          display: inline-block;
+                         
+    				}
+    			}
+    			.explore-text{
+    				h1{
+    					padding:0px;
+    					text-align: center;
+    					font-size: 18px;
+    				}
+    			}
+
+    		}
+    		.explore-box:last-child{
+    			flex-direction: column;
+    		}
+    		.explore-box:first-child{
+    			flex-direction: column;
+    		}
+    	}
+    }
+	.course{
+		.courses{
+			grid-template-columns:1fr;
+			
+			.course-box{
+				justify-self:center;
+			}
+		}
+	}
+
+
+	.explore-section{
+		.explore-head{
+			.img{
+				text-align: center;
+				img{
+					display: inline-block;
+					padding-left:0;
+					width:400px;
+				}
+			}
+		}
+		.explore-card{
+
+			.card-item{
+				img{}
+				h1{
+					font-size: 16px;
+
+				}
+			}
+		}
+	}
+
+	.footer{
+		text-align: center;
+		.footer-info{
+			text-align: center;
+			.footer-logo{
+				display: inline-block;
+				width:250px;
+			}
+			.footer-text{
+				display: inline-block;
+				width:100%;
+				p{
+					text-align: center;
+				}
+			}
+		}
+		.footer-links{
+			text-align: center;
+			ul{
+				display: inline-block;
+				padding:10px 10px;
+			}
+		}
+		.footer-social-icon{
+			display: inline-block;
+		}
+	}
+}
+
+
+
+
+
+
+@media screen and (max-width: 450px)
+{
+
+
+	nav{
+
+	   padding:10px 10px;
+		.navbar{
+			.logo{
+
+			}
+			.nav{
+				ul{
+					li{
+
+					}
+				}
+				
+			}
+		}
+	}
+     
+    
+
+	.explore-section{
+		.explore-head{
+			.img{
+				img{
+					width:300px;
+				}
+			}
+		}
+	}
+	.course{
+		padding:20px 10px;
+		.courses{
+			.course-box{
+				height: 340px;
+				width:240px;
+				border-radius:15px;
+				img{
+					height: 150px;
+				}
+				h1{
+					padding:3px 3px;
+					font-size:24px;
+					padding-bottom:10px;
+				}
+				h2{
+					padding-bottom:10px;
+				}
+				a{
+                   display: inline-block;
+                   margin:0px;
+                  
+				}
+				.buy{
+                    display: inline-block;
+                    margin-left: 10px;
+				}
+			}
+		}
+	}
+
+	.footer{
+		.footer-links{
+			display: block;
+			text-align: center;
+			padding-left:0px;
+			ul{
+                 font-size: 12px;
+                 display: inline-block;
+			}
+		}
+		.social{
+			padding-bottom:0;
+			a{
+				padding-bottom:0;
+			}
+		}
+	}
+}

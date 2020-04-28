@@ -1,0 +1,227 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Varela Round', sans-serif; }
+
+html {
+  scroll-behavior: smooth; }
+
+nav {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+  padding: 20px 150px;
+  position: fixed;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.99);
+  z-index: 9000;
+  overflow: auto;
+  transition: all 0.15s linear; }
+  nav .navbar {
+    display: flex;
+    justify-content: space-between; }
+    nav .navbar .logo a {
+      font-size: 28px;
+      text-decoration: none;
+      color: darkblue;
+      font-family: 'Montserrat', sans-serif;
+      text-align: center; }
+      nav .navbar .logo a img {
+        width: 115px;
+        display: inline-block; }
+    nav .navbar .nav ul {
+      display: flex;
+      list-style: none; }
+      nav .navbar .nav ul .nav-items {
+        text-decoration: none;
+        color: darkblue;
+        font-weight: 500;
+        padding: 0 20px;
+        line-height: 36px;
+        letter-spacing: 3px; }
+        nav .navbar .nav ul .nav-items:hover {
+          color: green; }
+      nav .navbar .nav ul #nav-signup {
+        border: 1px solid black;
+        color: darkblue;
+        font-weight: bold;
+        padding: 8px 16px;
+        border-radius: 5px; }
+        nav .navbar .nav ul #nav-signup:hover {
+          background-color: darkblue;
+          color: white;
+          border-color: black; }
+      nav .navbar .nav ul #nav-signin {
+        font-weight: bold; }
+
+.active {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4); }
+
+.landing {
+  text-align: center; }
+  .landing .landing-text {
+    color: rgba(0, 0, 0, 0.8);
+    font-family: 'Varela Round', sans-serif;
+    padding: 120px 20px 0px 20px; }
+  .landing .landing-image {
+    display: inline-block; }
+    .landing .landing-image img {
+      width: 50%; }
+  .landing .arrow {
+    padding: 50px 0px; }
+    .landing .arrow img {
+      transition: all 0.1s; }
+      .landing .arrow img:hover {
+        margin-top: 10px;
+        transition: all 0.2s; }
+
+/*.green{
+	background-color:rgb(186, 255, 186);
+}
+.blue{
+	background-color:rgb(218, 221, 245);
+ }
+ */
+.mentor-section {
+  padding: 100px;
+  background-color: rgba(32, 73, 168, 0.15);
+  background-image: url("images/mentors-background-section.png");
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed; }
+  .mentor-section .cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 20px; }
+    .mentor-section .cards .mentor-profile {
+      background-color: white;
+      display: flex;
+      padding: 30px;
+      margin: 20px;
+      border-radius: 30px;
+      transition: transform 0.2s; }
+      .mentor-section .cards .mentor-profile .image {
+        width: 40%; }
+        .mentor-section .cards .mentor-profile .image img {
+          width: 100%;
+          border-radius: 50%; }
+      .mentor-section .cards .mentor-profile .content {
+        padding-left: 30px; }
+        .mentor-section .cards .mentor-profile .content .name {
+          color: darkblue; }
+        .mentor-section .cards .mentor-profile .content .quote {
+          padding: 10px 0px 10px 0px; }
+          .mentor-section .cards .mentor-profile .content .quote span {
+            color: red; }
+        .mentor-section .cards .mentor-profile .content .designation {
+          padding-bottom: 10px;
+          color: darkblue; }
+        .mentor-section .cards .mentor-profile .content .know-more {
+          padding-top: 20px; }
+          .mentor-section .cards .mentor-profile .content .know-more a {
+            padding: 10px 20px;
+            background-color: white;
+            color: darkblue;
+            text-decoration: none;
+            border: 0.5px solid darkblue;
+            border-radius: 50px;
+            transition: background-color 0.3s; }
+            .mentor-section .cards .mentor-profile .content .know-more a:hover {
+              color: white;
+              background-color: darkblue;
+              transition: all 0.3s; }
+      .mentor-section .cards .mentor-profile:hover {
+        transform: scale(1.05);
+        transition: all 0.4s;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.4); }
+
+.image-section {
+  text-align: center; }
+  .image-section img {
+    width: 60%;
+    display: inline-block; }
+
+.footer {
+  background-color: rgba(0, 0, 0, 0.05);
+  color: rgba(0, 0, 0, 0.7);
+  display: flex; }
+  .footer .footer-info {
+    color: white;
+    flex: 1;
+    padding: 30px 30px; }
+    .footer .footer-info .footer-logo {
+      display: inline-block;
+      border-bottom: 1.5px solid rgba(0, 0, 0, 0.5); }
+      .footer .footer-info .footer-logo img {
+        width: 250px;
+        padding-bottom: 20px; }
+    .footer .footer-info .footer-text {
+      padding: 20px 0px;
+      width: 500px;
+      text-align: left;
+      color: rgba(0, 0, 0, 0.7); }
+  .footer .footer-links {
+    flex: 1;
+    padding-top: 30px;
+    padding-left: 30px; }
+    .footer .footer-links ul {
+      color: rgba(0, 0, 0, 0.7);
+      font-weight: bold;
+      list-style: none;
+      border-right: 0.5px solid rgba(0, 0, 0, 0.5);
+      border-left: 0.5px solid rgba(0, 0, 0, 0.5);
+      padding: 20px 70px; }
+      .footer .footer-links ul li {
+        text-align: center;
+        padding: 5px 0; }
+        .footer .footer-links ul li a {
+          text-decoration: none;
+          color: rgba(0, 0, 0, 0.7);
+          letter-spacing: 2px;
+          font-weight: lighter;
+          font-size: 14px; }
+          .footer .footer-links ul li a:hover {
+            color: black;
+            font-weight: bold; }
+  .footer .footer-social-icon {
+    flex: 1;
+    padding-left: 30px;
+    padding-top: 50px; }
+    .footer .footer-social-icon .phone p {
+      text-align: left;
+      font-size: 12px; }
+      .footer .footer-social-icon .phone p img {
+        width: 40px;
+        vertical-align: middle;
+        padding-right: 10px; }
+    .footer .footer-social-icon .social {
+      padding-top: 20px;
+      padding-bottom: 20px; }
+      .footer .footer-social-icon .social img {
+        width: 30px;
+        padding-right: 5px; }
+
+.copyright {
+  text-align: center;
+  color: darkblue;
+  font-size: 18px;
+  background-color: rgba(0, 0, 0, 0.05);
+  padding-bottom: 30px;
+  padding-top: 30px; }
+
+@media screen and (max-width: 1220px) {
+  nav {
+    padding: 20px 50px; } }
+
+@media screen and (max-width: 878px) {
+  nav .navbar .nav ul li:first-child {
+    display: none; } }
+
+@media screen and (max-width: 790px) {
+  nav .navbar .nav ul li:not(:last-child) {
+    display: none; }
+  nav .navbar .nav ul li {
+    font-size: 10px; } }
+
+@media screen and (max-width: 450px) {
+  nav {
+    padding: 10px 10px; } }

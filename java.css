@@ -439,8 +439,8 @@
     }
     
     .logo img{
-        height: 200px;
-        width: 200px;
+        height: 100px;
+        width: 100px;
         margin-right: 8em;
         
     }
@@ -783,6 +783,7 @@
 
 .contact{
     display: flex;
+    width: 100%;
     flex-direction: column;
     justify-content: center;
     align-items: center;

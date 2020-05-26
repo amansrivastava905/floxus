@@ -1,0 +1,778 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.logo{
+    display: flex;
+    height: 10vh;
+    width: 100%;
+    background-color: rgb(11, 107, 185);
+}
+
+.logo img{
+    height: 200px;
+    width: 200px;
+    margin-left: 6em;
+}
+
+.wrapper_courseIntro{
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    background-color: rgb(11, 107, 185);
+}
+
+.wrapper_courseIntro .left_content{
+    display: flex;
+    flex-basis: 50%;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper_courseIntro .left_content .heading{
+    font-family: monospace;
+    font-size: 3.5em;
+    font-weight: 1000;
+    color: rgb(238, 171, 27);
+    text-align: center;
+   
+    /* margin-right: 1em; */
+}
+
+.wrapper_courseIntro .left_content .description{
+    font-family: monospace;
+    font-size: 1.5em;
+    font-weight: 500;
+    color: white;
+    margin-top: 1em;
+    padding-left: 7.5em;
+    padding-right: 6em;
+}
+
+.wrapper_courseIntro .left_content .btn{
+    /* position: absolute; */
+    height: 3em;
+    width: 10em;
+    border: none;
+    border-radius: 2em;
+    background-color: rgb(238, 171, 27) ;
+    color: white;
+    font-family: monospace;
+    font-size: 1.5em;
+    font-weight: 500;
+    margin-top: 1em;
+   
+}
+
+
+.wrapper_courseIntro .right_content{
+    display: flex;
+    flex-basis: 50%;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    /* background-color: bisque; */
+}
+
+.wrapper_courseIntro .right_content img{
+    width: 400px;
+    height: 350px;
+}
+
+/* coursetools section */
+.coursetools_section{
+    display: flex;
+    height: 40vh;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    background-color: aliceblue;
+}
+
+.coursetools_section .firstcard{
+    display: flex;
+    height: 14vh;
+    width: 25em;
+    border: 1.5px solid rgb(231, 228, 228);
+    background-color: white;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.coursetools_section .firstcard p{
+    font-family: monospace;
+    font-size: 2em;
+    font-weight: 700;
+    color: rgb(110, 109, 105);
+
+}
+
+
+
+.coursetools_section_heading{
+    display: flex;
+    height: 10vh;
+    width: 100%;
+    padding-top: 1em;
+    justify-content: center;
+    align-items: center;
+    background-color: aliceblue;
+}
+
+.coursetools_section_heading p{
+    font-size: 3em;
+    font-family: monospace;
+    font-weight: 800;
+
+}
+
+.coursetools_section_footer{
+    display: flex;
+    height: 10vh;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    background-color: aliceblue;
+}
+
+.coursetools_section_footer .btn_download{
+    height: 3em;
+    width: 12em;
+    bottom: 10em;
+    border: 1px solid rgb(238, 171, 27);
+    border-radius: 0.2em;
+    background-color: white;
+    color: black;
+    font-family: monospace;
+    font-size: 1.5em;
+    font-weight: 500;
+    margin-bottom: 1em;
+}
+
+.coursetools_section_footer .btn_download:hover{
+    background-color:  rgb(238, 171, 27);
+    color: white;
+}
+
+/* certification section start here */
+.certification_section{
+    display: flex;
+    height: 60vh;
+    width: 100%;
+
+}
+
+.certification_section .certification_content{
+    display: flex;
+    flex-direction: column;
+    flex-basis: 50%;
+    height: 60vh;
+    background-color:rgb(11, 107, 185) ;
+    justify-content: center;
+    align-items: center;
+}
+
+.certification_section .certification_content .heading{
+    font-family: monospace;
+    font-size: 2.3em;
+    font-weight: 1000;
+    color: rgb(238, 171, 27);
+    text-align: center;
+    padding-left: 2em;
+    padding-right: 2em;
+}
+
+.certification_section .certification_content .description{
+    font-family: monospace;
+    font-size: 1.5em;
+    font-weight: 500;
+    color: white;
+    padding-left: 6em;
+    margin-top: 1em;
+    padding-right: 5em;
+    text-align: center;
+}
+
+.certification_section .certification_image{
+    display: flex;
+    flex-basis: 50%;
+    justify-content: center;
+    align-items: center;
+}
+
+/* benefit section start here */
+.benefit_section{
+    display: flex;
+    flex-direction: column;
+    height: 70vh;
+
+}
+
+.benefit_section .benefit_section_heading{
+    display: flex;
+    height: 10vh;
+    width: 100%;
+    margin-top: 1em;
+    justify-content: center;
+    align-items: center;
+}
+
+.benefit_section .benefit_section_heading p{
+    font-size: 2em;
+    font-family: monospace;
+    font-weight: 800;
+}
+
+.benefit_section .benefit_section_content{
+    display: flex;
+    height: 60vh;
+    width: 100%;
+    /* flex-wrap: wrap; */
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.benefit_section .benefit_section_content .benefit_box{
+    display: flex;
+    flex-direction: column;
+    height: 200px;
+    width: 300px;
+    justify-content: center;
+    align-items: center;
+    /* background-color: cornflowerblue; */
+}
+
+.benefit_section .benefit_section_content .benefit_box p{
+    font-family: monospace;
+    font-size: 1.5em;
+    font-weight: 520;
+    color: rgb(42, 42, 156);
+    margin-top: 0.5em;
+}
+
+/* project section start here */
+.project_section{
+    display: flex;
+    height: 90vh;
+    width: 100%;
+    flex-direction: column;
+    background-color: aliceblue;
+}
+
+.project_section .project_section_heading{
+    display: flex;
+    height: 10vh;
+    width: 100%;
+    margin-top: 1em;
+    justify-content: center;
+    align-items: center;
+}
+
+.project_section .project_section_heading p{
+    font-size: 3em;
+    font-family: monospace;
+    font-weight: 800;
+}
+
+.project_section .project_section_content{
+    display: flex;
+    height: 70vh;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    /* margin-left: 1em; */
+    /* margin-right: 1em; */
+
+}
+
+.project_section .project_section_content .project_box{
+    display: flex;
+    flex-direction: column;
+    height: 400px;
+    width: 350px;
+    background-color: white;
+    border: 3px solid white;
+    justify-content: center;
+    align-items: center;
+    border: 1.5px solid #eee;
+}
+
+.project_section .project_section_content .project_box .head{
+    font-family: monospace;
+    font-size: 1.5em;
+    font-weight: 900;
+    color: rgb(42, 42, 156);
+    margin-top: 0.5em;
+    padding: 1em;
+    text-align: center;
+}
+
+.project_section .project_section_content .project_box p{
+
+    font-family: monospace;
+    font-size: 1.2em;
+    font-weight: 500;
+    color: rgb(42, 42, 156);
+    margin-top: 0.5em;
+    padding: 1em;
+    text-align: center;
+
+}
+
+.project_section .project_section_footer{
+    display: flex;
+    width: 100%;
+    height: 10vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.project_section .project_section_footer .btn_download{
+    height: 3em;
+    width: 15em;
+    bottom: 10em;
+    border: 1px solid rgb(238, 171, 27);
+    border-radius: 0.2em;
+    background-color: white;
+    color: black;
+    font-family: monospace;
+    font-size: 1.5em;
+    font-weight: 500;
+}
+
+.project_section .project_section_footer .btn_download:hover{
+    background-color: rgb(238, 171, 27);
+    color: white;
+}
+
+.project_section .project_section_footer  a{
+    text-decoration: none;
+    color: black;
+}
+.project_section .project_section_footer  a:hover{
+    color: white;
+}
+
+.ready{
+    display: flex;
+    flex-direction: column;
+    height: 40vh;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(11, 107, 185);
+
+}
+
+.ready p{
+    font-family: monospace;
+        font-size: 3em;
+        font-weight: 1000;
+        color: rgb(238, 186, 73);
+        text-align: center;
+}
+
+.ready .btn{
+    height: 3em;
+    width: 10em;
+    border: none;
+    border-radius: 2em;
+    background-color: rgb(238, 171, 27) ;
+    color: white;
+    font-family: monospace;
+    font-size: 1.5em;
+    font-weight: 500;
+    margin-top: 1em;
+}
+
+.ready .contact .btn1{
+    height: 3em;
+    width: 10em;
+    border: none;
+    border-radius: 2em;
+    /* background-color: rgb(238, 171, 27) ; */
+    color: rgb(88, 86, 86);
+    font-family: monospace;
+    font-size: 1.5em;
+    font-weight: 500;
+    margin-top: 1em;
+}
+
+.ready .contact .btn1:hover{
+    background-color: rgb(238, 171, 27) ;
+    color: white;
+}
+
+.footer-copyright{
+    display: flex;
+    height: 10vh;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(11, 107, 185);
+
+}
+
+.footer-copyright p{
+    font-size: 1em;
+    font-weight: 500;
+    color: rgb(238, 186, 73);
+    text-align: center;
+}
+
+
+
+@media screen and (max-width: 796px){
+
+    .logo{
+        display: flex;
+        height: auto;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        background-color: rgb(11, 107, 185);
+    }
+    
+    .logo img{
+        height: 200px;
+        width: 200px;
+        margin-right: 8em;
+        
+    }
+    .wrapper_courseIntro{
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        width: 100%;
+        background-color: rgb(11, 107, 185);
+    }
+
+    .wrapper_courseIntro .left_content{
+        display: flex;
+        flex-basis: 50%;
+        flex-direction: column;
+        height: auto;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .wrapper_courseIntro .left_content .heading{
+        font-family: monospace;
+        font-size: 2.5em;
+        font-weight: 1000;
+        color: rgb(238, 171, 27);
+        text-align: center;
+        /* padding-left: 1em;
+        padding-right: 1em; */
+    }
+    .wrapper_courseIntro .left_content .description{
+        font-family: monospace;
+        font-size: 1.5em;
+        font-weight: 500;
+        color: white;
+        margin-top: 1em;
+        padding-left: 2em;
+        padding-right: 2em;
+        text-align: center;
+    }
+
+    .wrapper_courseIntro .right_content{
+        display: flex;
+        flex-basis: 50%;
+        height: auto;
+        justify-content: center;
+        align-items: center;
+        /* background-color: bisque; */
+    }
+    
+    .wrapper_courseIntro .right_content img{
+        width: 80%;
+        height: 330px;
+        margin-top: 1em;
+        margin-bottom: 1em;
+    }
+
+    /* coursetools section */
+    .coursetools_section_heading{
+        display: flex;
+        height: 10vh;
+        width: 100%;
+        padding-top: 1em;
+        justify-content: center;
+        align-items: center;
+        background-color: aliceblue;
+    }
+    
+    .coursetools_section_heading p{
+        font-size: 2em;
+        font-family: monospace;
+        font-weight: 800;
+        text-align: center;
+        color: rgb(70, 68, 68);
+    
+    }
+
+
+.coursetools_section{
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    background-color: aliceblue;
+}
+
+.coursetools_section .firstcard{
+    display: flex;
+    height: 14vh;
+    width: 24em;
+    border: 1.5px solid rgb(231, 228, 228);
+    background-color: white;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 1.5em;
+}
+
+.coursetools_section .firstcard p{
+    font-family: monospace;
+    font-size: 2em;
+    font-weight: 700;
+    color: rgb(110, 109, 105);
+
+}
+.coursetools_section_footer{
+    display: flex;
+    height: auto;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    background-color: aliceblue;
+}
+
+.coursetools_section_footer .btn_download{
+    height: 3em;
+    width: 12em;
+    bottom: 10em;
+    border: 1px solid rgb(238, 171, 27);
+    border-radius: 0.2em;
+    background-color: white;
+    color: black;
+    font-family: monospace;
+    font-size: 1.5em;
+    font-weight: 500;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+.coursetools_section_footer .btn_download:hover{
+    background-color:  rgb(238, 171, 27);
+    color: white;
+}
+
+/* certification section start here */
+.certification_section{
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    width: 100%;
+
+}
+
+.certification_section .certification_content{
+    display: flex;
+    flex-direction: column;
+    flex-basis: 50%;
+    height: auto;
+    background-color:rgb(11, 107, 185) ;
+    justify-content: center;
+    align-items: center;
+}
+
+.certification_section .certification_content .heading{
+    font-family: monospace;
+    font-size: 2.3em;
+    font-weight: 1000;
+    color: rgb(238, 171, 27);
+    text-align: center;
+    padding-left: 2em;
+    padding-right: 2em;
+    padding-top: 1em;
+}
+
+.certification_section .certification_content .description{
+    font-family: monospace;
+    font-size: 1.5em;
+    font-weight: 500;
+    color: white;
+    padding-left: 4em;
+    margin-top: 1.5em;
+    padding-right: 2em;
+    margin-right: 1em;
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+.certification_section .certification_image{
+    display: flex;
+    flex-basis: 50%;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+.certification_section .certification_image img{
+    width: 80%;
+}
+
+.benefit_section{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+
+}
+
+.benefit_section .benefit_section_heading{
+    display: flex;
+    height: 10vh;
+    width: 100%;
+    margin-top: 1em;
+    justify-content: center;
+    align-items: center;
+}
+
+.benefit_section .benefit_section_heading p{
+    font-size: 2em;
+    font-family: monospace;
+    font-weight: 800;
+    color: rgb(70, 68, 68);
+}
+
+.benefit_section .benefit_section_content{
+    display: flex;
+    height: auto;
+    width: 100%;
+    flex-direction: column;
+    /* flex-wrap: wrap; */
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.benefit_section .benefit_section_content .benefit_box{
+    display: flex;
+    flex-direction: column;
+    height: 200px;
+    width: 300px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1em;
+    /* background-color: cornflowerblue; */
+}
+
+.benefit_section .benefit_section_content .benefit_box p{
+    font-family: monospace;
+    font-size: 1.5em;
+    font-weight: 520;
+    color: rgb(42, 42, 156);
+    margin-top: 0.5em;
+}
+
+/* project section start here */
+.project_section{
+    display: flex;
+    height: auto;
+    width: 100%;
+    flex-direction: column;
+    background-color: aliceblue;
+}
+
+.project_section .project_section_heading{
+    display: flex;
+    height: auto;
+    width: 100%;
+    margin-top: 1em;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.project_section .project_section_heading p{
+    font-size: 2em;
+    font-family: monospace;
+    font-weight: 800;
+    margin-bottom: 1em;
+    margin-top: 0.5em;color: rgb(70, 68, 68);
+}
+
+.project_section .project_section_content{
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content:center;
+    align-items: center;
+
+}
+
+.project_section .project_section_content .project_box{
+    display: flex;
+    flex-direction: column;
+    height: 400px;
+    width: 80%;
+    background-color: white;
+    border: 3px solid white;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1em;
+}
+
+.project_section .project_section_content .project_box p{
+
+    font-family: monospace;
+    font-size: 1.2em;
+    font-weight: 500;
+    color: rgb(42, 42, 156);
+    margin-top: 0.5em;
+    padding: 1em;
+    text-align: center;
+
+}
+
+.project_section .project_section_footer{
+    display: flex;
+    width: 100%;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.project_section .project_section_footer .btn_download{
+    height: 3em;
+    width: 15em;
+    bottom: 10em;
+    border: 1px solid rgb(238, 171, 27);
+    border-radius: 0.2em;
+    background-color: white;
+    color: black;
+    font-family: monospace;
+    font-size: 1.5em;
+    font-weight: 500;
+    margin-top: 1em;
+    margin-bottom: 1.5em;
+}
+
+.project_section .project_section_footer .btn_download:hover{
+    background-color: rgb(238, 171, 27);
+    color: white;
+}
+}

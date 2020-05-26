@@ -775,4 +775,16 @@
     background-color: rgb(238, 171, 27);
     color: white;
 }
+
+.ready p{
+    margin-top: 1em;
+    font-size: 2em;
+}
+
+.contact{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 }

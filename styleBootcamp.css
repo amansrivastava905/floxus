@@ -1,0 +1,343 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Varela Round", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.container {
+  height: 100vh;
+  background-color: #ff5733;
+  padding: 30px 30px 70px 30px;
+}
+.container .homebtn a {
+  text-decoration: none;
+  font-size: 18px;
+  color: white;
+  padding: 10px 20px;
+  border: 2px solid white;
+  border-radius: 50px;
+}
+.container .homebtn a:hover {
+  color: #ff5733;
+  background-color: white;
+  transition: all 0.4s;
+}
+.container .landing {
+  margin-top: 100px;
+}
+.container .landing .landing-page {
+  display: flex;
+}
+.container .landing .landing-page .landing-image {
+  display: flex;
+  align-items: center;
+}
+.container .landing .landing-page .landing-heading {
+  padding: 100px 20px;
+}
+.container .landing .landing-page .landing-heading h1 {
+  font-size: 48px;
+  color: #ffdf33;
+  margin-bottom: 20px;
+}
+.container .landing .landing-page .landing-heading p {
+  color: white;
+  font-size: 24px;
+  margin-bottom: 40px;
+}
+.container .landing .landing-page .landing-heading a {
+  text-decoration: none;
+  color: white;
+  padding: 10px 30px;
+  font-family: "Varela Round", sans-serif;
+  border: 1px solid white;
+  margin-right: 10px;
+  border-radius: 50px;
+  transition: background-color 0.2s;
+}
+.container .landing .landing-page .landing-heading a:hover {
+  color: #ff5733;
+  background-color: white;
+  transition: all 0.4s;
+}
+
+.learnmore-container {
+  padding: 50px;
+}
+.learnmore-container .learnMore-head {
+  color: #ff5733;
+  text-align: center;
+  font-size: 18px;
+}
+.learnmore-container .learnMore {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 100px;
+}
+.learnmore-container .learnMore .learnmore-card {
+  padding: 10px;
+  text-align: center;
+  color: #34353a;
+  font-size: 18px;
+}
+.learnmore-container .learnMore .learnmore-card .text {
+  margin-top: 10px;
+}
+
+.learnCertification {
+  padding-bottom: 50px;
+  background-color: #ff5733;
+}
+.learnCertification .text {
+  padding: 100px 50px 50px 100px;
+  text-align: center;
+  color: white;
+}
+.learnCertification .text h1 {
+  color: gold;
+  font-size: 48px;
+  font-weight: lighter;
+}
+.learnCertification .text p {
+  padding: 50px 50px 50px 0px;
+  font-size: 24px;
+}
+.learnCertification .image {
+  text-align: center;
+}
+.learnCertification .image img {
+  width: 500px;
+  display: inline-block;
+}
+
+.project {
+  padding: 50px;
+}
+.project .text {
+  color: #ff5733;
+  text-align: center;
+  font-size: 42px;
+}
+.project .projectlist {
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+}
+.project .projectlist .project-card {
+  width: 400px;
+  padding: 20px;
+  background-color: #ffdbd2;
+  margin: 20px;
+}
+.project .projectlist .project-card .image {
+  text-align: center;
+  padding-bottom: 10px;
+}
+.project .projectlist .project-card .image img {
+  display: inline-block;
+}
+.project .projectlist .project-card .title {
+  font-size: 28px;
+  color: #ff5733;
+  padding-bottom: 20px;
+}
+.project .projectlist .project-card .desc {
+  color: #200b06;
+}
+.project .buttons {
+  margin: 50px 20px;
+  text-align: center;
+}
+.project .buttons a {
+  text-decoration: none;
+  color: #ff5733;
+  border-radius: 50px;
+  padding: 10px 20px;
+  margin: 0px 20px;
+  border: 1px solid #ff5733;
+}
+
+.faq {
+  padding: 50px 100px;
+}
+.faq .header {
+  font-size: 32px;
+  padding: 0px 0px 100px 0px;
+  color: #ff5733;
+}
+.faq .faq-card {
+  width: 60%;
+  /* transition: 5s; */
+}
+.faq .faq-card .ques {
+  width: 100%;
+  text-align: left;
+  outline: none;
+  background-color: #eef1ff;
+  color: royalblue;
+  padding: 10px;
+  font-size: 18px;
+  margin-bottom: 5px;
+  border: 0.5px solid #ab8fec;
+  border-radius: 4px;
+}
+.faq .faq-card .ques:hover {
+  background-color: #b8bcee;
+  cursor: pointer;
+}
+.faq .faq-card .ques span {
+  font-size: 24px;
+  color: #ee6516;
+}
+.faq .faq-card .ans {
+  color: rgba(0, 0, 0, 0.6);
+  margin-top: 20px;
+  display: none;
+  transition: max-height 0.2s ease-out;
+  padding-bottom: 50px;
+}
+
+.active {
+  background-color: #b8bcee;
+}
+
+@media screen and (max-width: 600px) {
+  .container .homebtn a {
+    display: block;
+    text-align: center;
+  }
+  .container .landing .landing-page {
+    display: block;
+    text-align: center;
+  }
+  .container .landing .landing-page .landing-heading {
+    padding: 10px;
+  }
+  .container .landing .landing-page .landing-heading h1 {
+    font-size: 36px;
+  }
+  .container .landing .landing-page .landing-heading a {
+    display: block;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  .container .landing .landing-page .landing-image {
+    display: block;
+  }
+  .container .landing .landing-page .landing-image img {
+    width: 200px;
+  }
+
+  .learnmore-container .learnMore {
+    display: block;
+  }
+  .learnmore-container .learnMore .learnmore-card {
+    margin-bottom: 50px;
+  }
+
+  .learnCertification .text {
+    padding: 20px;
+    text-align: center;
+    color: white;
+  }
+  .learnCertification .text h1 {
+    color: gold;
+    font-size: 32px;
+    font-weight: lighter;
+  }
+  .learnCertification .text p {
+    padding: 50px 20px 20px 20px;
+    font-size: 18px;
+  }
+  .learnCertification .image {
+    text-align: center;
+  }
+  .learnCertification .image img {
+    width: 300px;
+    display: inline-block;
+  }
+
+  .project {
+    padding: 10px;
+  }
+  .project .text {
+    font-size: 32px;
+    padding-bottom: 50px;
+  }
+  .project .projectlist {
+    display: block;
+    text-align: center;
+  }
+  .project .projectlist .project-card {
+    display: inline-block;
+    padding: 10px;
+    background-color: #ffdbd2;
+    margin: 10px;
+    width: 300px;
+  }
+  .project .projectlist .project-card .image {
+    text-align: center;
+    padding-bottom: 10px;
+  }
+  .project .projectlist .project-card .image img {
+    display: inline-block;
+  }
+  .project .projectlist .project-card .title {
+    font-size: 28px;
+    color: #ff5733;
+    padding-bottom: 20px;
+  }
+  .project .projectlist .project-card .desc {
+    color: #200b06;
+  }
+  .project .buttons {
+    text-align: center;
+  }
+  .project .buttons a {
+    display: block;
+    margin-bottom: 20px;
+  }
+
+  .faq {
+    padding: 50px 20px;
+  }
+  .faq .header {
+    text-align: center;
+  }
+  .faq .faq-card {
+    width: 100%;
+  }
+  .faq .faq-card .ques {
+    width: 100%;
+    text-align: left;
+    outline: none;
+    background-color: #eef1ff;
+    color: royalblue;
+    padding: 10px;
+    font-size: 18px;
+    margin-bottom: 5px;
+    border: 0.5px solid #ab8fec;
+    border-radius: 4px;
+  }
+  .faq .faq-card .ques:hover {
+    background-color: #b8bcee;
+    cursor: pointer;
+  }
+  .faq .faq-card .ques span {
+    font-size: 24px;
+    color: #ee6516;
+  }
+  .faq .faq-card .ans {
+    color: rgba(0, 0, 0, 0.6);
+    margin-top: 20px;
+    display: none;
+    transition: max-height 0.2s ease-out;
+    padding-bottom: 50px;
+  }
+}
+
+/*# sourceMappingURL=styleBootcamp.css.map */

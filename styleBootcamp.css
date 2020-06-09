@@ -206,11 +206,15 @@ html {
 }
 
 @media screen and (max-width: 600px) {
+  .container{
+    height: auto;
+  }
   .container .homebtn a {
     display: block;
     text-align: center;
   }
   .container .landing .landing-page {
+    height: auto;
     display: block;
     text-align: center;
   }

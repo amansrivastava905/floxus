@@ -1,0 +1,129 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+
+.newsletter_wrapper{
+    display: flex;
+    width: 100%;
+    height: 100vh;
+}
+
+.newsletter_wrapper .left{
+    display: flex;
+    flex-basis: 50%;
+    flex-direction: column;
+    height: 100vh;
+    background-color: #3862D1;
+    justify-content: center;
+    align-items: center;
+}
+
+.newsletter_wrapper .left .logo_wrapper {
+    display: flex;
+    height: 20vh;
+    width: 100%;
+
+}
+
+.newsletter_wrapper .left .logo_wrapper img{
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    top: 0;
+}
+
+.newsletter_wrapper .left img{
+    height: 500px;
+    width: 500px;
+}
+
+.newsletter_wrapper .right{
+    display: flex;
+    flex-basis: 50%;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-color: #F9FBFD;
+}
+
+iframe{
+    -webkit-box-shadow: 10px 10px 89px -6px rgba(224,220,224,0.46);
+-moz-box-shadow: 10px 10px 89px -6px rgba(224,220,224,0.46);
+box-shadow: 10px 10px 89px -6px rgba(224,220,224,0.46);
+}
+
+/* .newsletter_wrapper .right iframe{
+    width: 540;
+    height: 500;
+} */
+
+@media screen and (max-width: 796px){
+    .newsletter_wrapper{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+    }
+
+    .newsletter_wrapper .left{
+        display: flex;
+        flex-basis: 50%;
+        height: auto;
+        /* background-color: rgb(58, 99, 212); */
+        justify-content: center;
+        align-items: center;
+    }
+
+    .newsletter_wrapper .left .logo_wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .newsletter_wrapper .left .logo_wrapper img{
+        width: 200px;
+        height: 200px;
+        position: absolute;
+        
+    }
+
+    .newsletter_wrapper .left img{
+        height: 450px;
+        width: 400px;
+        margin-bottom: 10px;
+        margin-top: 20px;
+    }
+
+    iframe{
+        width: 500px;
+        height: 100%;
+    }
+}
+
+@media screen and (max-width: 496px){
+    .newsletter_wrapper{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+    }
+
+    .newsletter_wrapper .left{
+        display: flex;
+        flex-basis: 50%;
+        height: auto;
+        /* background-color: rgb(58, 99, 212); */
+        justify-content: center;
+        align-items: center;
+    }
+
+    .newsletter_wrapper .left img{
+        height: 350px;
+        width: 300px;
+        margin-bottom: 10px;
+        margin-top: 20px;
+    }
+}

@@ -353,7 +353,7 @@
     font-weight: 500;
     color: #1d1b38;
     margin-top: 0.5em;
-    padding: 1em;
+    padding: 2em;
     text-align: center;
 
 }
@@ -822,7 +822,7 @@
     font-family: monospace;
     font-size: 1.2em;
     font-weight: 500;
-    color: rgba(0, 0, 0, 0.4);
+    color: rgba(0, 0, 0, 0.6);
     margin-top: 0.5em;
     padding: 1em;
     text-align: center;

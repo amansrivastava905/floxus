@@ -511,7 +511,7 @@
         width: 100%;
         justify-content: center;
         align-items: center;
-        background-color: #1d1b38;
+        background-color:#0f4c75;
     }
     
     .logo img{
@@ -525,7 +525,7 @@
         flex-direction: column;
         height: auto;
         width: 100%;
-        background-color: #1d1b38;
+        background-color:#0f4c75;
     }
 
     .wrapper_courseIntro .left_content{
@@ -670,7 +670,7 @@
     flex-direction: column;
     flex-basis: 50%;
     height: auto;
-    background-color:#1d1b38 ;
+    background-color:#0f4c75;
     justify-content: center;
     align-items: center;
 }

@@ -270,7 +270,10 @@ nav {
       transition: all 0.2s; }
 
 .footer {
-  background-color: rgba(0, 0, 0, 0.05);
+  -webkit-box-shadow: 0px -47px 50px -31px rgba(112,112,112,1);
+-moz-box-shadow: 0px -47px 50px -31px rgba(112,112,112,1);
+box-shadow: 0px -47px 50px -31px rgba(112,112,112,1);
+  background-color: rgba(190, 190, 190, 0.05);
   color: rgba(0, 0, 0, 0.7);
   display: flex; }
   .footer .footer-info {
@@ -333,7 +336,7 @@ nav {
   text-align: center;
   color: darkblue;
   font-size: 18px;
-  background-color: rgba(0, 0, 0, 0.05);
+  background-color: rgba(190, 190, 190, 0.05);
   padding-bottom: 30px;
   padding-top: 30px; }
 

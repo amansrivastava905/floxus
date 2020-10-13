@@ -40,8 +40,19 @@
     text-align: center;
     padding-left: 2em;
     padding-right: 2em;
+    padding-top: 1em;
    
     /* margin-right: 1em; */
+}
+.wrapper_courseIntro .left_content .subheading{
+    font-family: monospace;
+    font-size: 2em;
+    font-weight: 700;
+    text-align: center;
+    color:white;
+    padding-left: 2em;
+    padding-right: 2em;
+
 }
 
 .wrapper_courseIntro .left_content .description{
@@ -406,6 +417,9 @@
     font-weight: 500;
     margin-bottom: 1em;
 }
+.download_syllabus .btn_syllabus:hover{
+    background-color: #dc143c;
+}
 
 
 
@@ -420,7 +434,7 @@
       display: flex;
       justify-self: center;
       align-items: center;
-      width: 100%;
+      widt: 100%;
       height: auto;
   } */
 
